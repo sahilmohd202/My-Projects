@@ -1,0 +1,127 @@
+
+
+
+div#BookedOrder{
+    width:40%;
+    display:grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    font-family:Lucida Sans Unicode;
+    font-weight:normal;
+    margin:5px;
+    margin-top:15px;
+    color:rgb(51, 50, 50);
+    background-color: white;
+    border-bottom:2px solid darkgray;
+    border-radius:10px;
+}
+div#BookedOrder p{margin:0;padding:0;}
+
+
+div.section1{
+    border-bottom:2px solid darkgray;
+}
+
+div#BookedOrder span.label
+{
+    color:rgb(131, 131, 131);
+    font-family: Lucida Sans Unicode;
+    font-weight: bold;
+}
+
+div.section4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display:flex;
+    justify-content: space-between;
+    border:0px;
+    border-right:2px solid darkgray;
+    border-left:2px solid darkgray;
+}
+
+div.section1 img#pimage{
+    width:5vw;
+    height:5vw;
+}
+
+
+div.section1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div.section2{
+    font-family: Lucida Sans Unicode;
+    font-weight: bold;
+    color:black;
+    border:0px;
+    border-left:2px solid darkgray;
+    border-right:2px solid darkgray;
+    border-top:2px solid darkgray;
+    grid-column-start:2;
+    grid-column-end:4;
+}
+div.section2 div:nth-child(1)
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+div.section2 div:nth-child(2)
+{
+     border:0px;
+     border-top:1px solid darkgray;
+    
+}
+
+
+
+div.section4 div{
+    flex-grow: 1;
+}
+
+
+
+div.section5{
+    border:0;
+    border-right:2px solid darkgray;
+    border-left:2px solid darkgray;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    
+}
+
+
+
+
+
+div.item{
+    font-size:1.1vw;
+    padding:0.5em;
+  }
+  
+
+
+
+@media only screen and (orientation:portrait)
+{
+    div#BookedOrder{
+        width:100%;
+    }
+
+    div.item{
+        font-size:1.6vh;
+        padding:0.5em;
+      }
+
+
+      div.section1 img#pimage{
+        width:15vh;
+        height:15vh;
+    }
+
+
+}

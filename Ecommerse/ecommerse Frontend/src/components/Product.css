@@ -1,0 +1,98 @@
+div#Product{   height:13rem;    display:flex;  border:0px; border-bottom:1px solid lightgray;  margin-top:2rem;    }
+div#Product_image{  flex:1;   display:flex; justify-content: center; align-items: center;    }
+div#details{  flex:4;   display:flex; flex-direction: column; justify-content: space-around;   } 
+div#Product p{ margin:0px;  }
+
+
+div#Product{    cursor:pointer;  }
+
+
+
+
+
+
+
+
+
+div#Product_image img{
+    width:8rem;
+    height:80%;
+   
+}
+
+div#Product div#details p#product_name{
+    font-family:Lucida Sans Unicode;
+    font-weight:bold;
+    font-size: 1.15rem;
+
+}
+
+
+div#Product div#details p span{
+    font-weight:bold;
+    font-size:1rem;
+    font-family:Lucida Sans Unicode;
+    color:rgb(27, 27, 27);
+}
+
+
+div#Product div#details p span#product_price
+{
+    font-size:2rem;
+}
+
+div#Product div#details p span#product_discount
+{
+   margin-left:1rem;
+   text-decoration: line-through;
+   font-size:1.1rem;
+   color:rgb(155, 155, 155);
+
+}
+div#Product:hover div#details p span#product_discount
+{
+   
+  
+   font-size:1.2rem;
+   color:rgb(206, 85, 85);
+   
+   transition:text-decoration,color,font-size 0.1s 0s linear;
+
+}
+
+div#Product div#details p#product_rating
+{
+    /* background-color: green; */
+    background-image: linear-gradient(green,rgb(6, 92, 6));
+    width:3em;
+    text-align: center;
+    font-weight:bold;
+    font-family:Lucida Sans Unicode;
+    color:white;
+    border-radius:2px;
+    padding-left:0.5em;
+    padding-right:0.5em;
+}
+
+/* div#Product:hover div#details p#product_rating svg{
+    transform:rotateY(360deg);
+    transition:transform 0.8s 0s ease-out;
+} */
+
+
+
+
+div#Product div#details p#product_rating svg{
+     color: #ffd900ef;
+    font-size: 0.9em;
+   
+}
+
+
+
+
+
+
+
+
+

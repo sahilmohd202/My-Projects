@@ -1,0 +1,10 @@
+@import "../GlobalVariables.css";
+input[type="text"]{
+    font-family:Lucida Sans Unicode;
+    font-size:100%;
+    border:4px solid var(--lightpurple);
+    border-radius:8px;
+    color:black;
+    padding-left:10px;
+    box-sizing:border-box;
+}

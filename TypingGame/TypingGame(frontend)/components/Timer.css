@@ -1,0 +1,11 @@
+@import "../GlobalVariables.css";
+div#Timer{
+      width:10%;
+      height:7vh;
+      font-size:4vh;
+      font-family:Lucida Sans Unicode;
+      font-weight:bold;
+      color:var(--darkpurple);
+      display:inline-block;
+
+}

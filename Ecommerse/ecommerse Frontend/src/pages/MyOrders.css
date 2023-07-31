@@ -1,0 +1,32 @@
+div#MyOrders{
+    min-height:500px;
+    background-color: white;
+    padding-top: 10%;
+    padding-bottom:5%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+div#MyOrders div.error,div.empty{
+    color:darkgray;
+    font-family: Lucida ;
+}
+
+div#MyOrders div.error svg,div.empty svg{
+  color:darkgray;  
+  font-size: 20px;
+}
+
+
+
+
+@media only screen and (orientation:portrait){
+    div#MyOrders{
+        flex-direction: column;
+    }
+}
+
+

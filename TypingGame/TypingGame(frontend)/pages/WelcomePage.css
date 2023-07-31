@@ -1,0 +1,106 @@
+@import "../GlobalVariables.css";
+/*welcome page*/
+div#WelcomePage{
+    background-color:var(--pagecolor);
+    width:var(--pagewidth);
+    height:var(--pageheight);
+}
+
+/**/
+
+
+
+
+/*select -choose time*/
+
+select#choosetime
+{
+    width:200px;
+    height:35px;
+    font-family:var(--textstyle);
+    border:2px solid var(--lightpurple); 
+    color:var(--lightpurple);
+    font-weight: bold;
+    border-radius:5px;
+}
+
+
+
+/**/
+
+
+/*  start button  */
+button#startbutton{
+    margin-left:20px;
+    background-color: var(--darkpurple);
+    color:white;
+    font-family:Lucida Sans Unicode;
+    font-weight:normal;
+    border:0px;
+    width:100px;
+    height:35px;
+    font-size:100%;
+    border-radius:5px;
+    box-shadow:1px 1px 4px rgb(77, 77, 77);
+
+}
+
+button#startbutton:active{
+    transform:scale(0.98,0.98);
+}
+
+button#startbutton:hover{
+    transform:scale(1.05,1);
+    background-color:var(--lightpurple);
+}
+/* */
+
+
+
+
+/*heading */
+
+h1{
+    font-family:var(--textstyle);
+    color:var(--lightpurple);
+}
+
+h1 span{
+    background-color: var(--lightpurple);
+    color:white;
+    border-radius:50% 0% 50% 0%;
+    
+}
+
+
+/**/
+
+/*label*/
+label{
+    font-family:var(--textstyle);
+    color:black;
+    font-weight:bold;
+}
+
+/**/
+
+
+
+/*radio*/
+  input[name="level"]
+  {
+    margin-right:10px;
+  }
+
+/**/
+
+
+/* mainicon*/
+img#mainlogo
+{
+   
+    width:calc(var(--pagewidth)/4);
+    height:calc(var(--pageheight)/2);
+}
+
+/**/

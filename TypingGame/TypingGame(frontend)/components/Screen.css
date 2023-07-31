@@ -1,0 +1,28 @@
+@import "./Screen.css";
+@import "../GlobalVariables.css";
+div#Screen{
+    background-image: linear-gradient(to bottom,var(--screencolor),#ddd7d7);
+    box-shadow:1px 1px 7px black;
+    margin-bottom:10px;
+    border-radius:5px;
+    color:#565656;
+    font-family:Lucida Sans Unicode;
+    text-align:justify;
+    padding:2%;
+    font-size:1.5em;
+    box-sizing:border-box;
+}
+
+
+div#Screen span#correcttext
+{
+    color:green;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: green;
+}
+
+div#Screen span#wrongtext
+{
+    color:red;
+}

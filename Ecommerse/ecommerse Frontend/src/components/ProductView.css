@@ -1,0 +1,51 @@
+div#ProductView{    display:flex; height:90vh;   flex-direction:row;  background-color: white;        }
+
+
+
+
+
+p{margin:0; margin-top: 10px;}
+div#ProductView div#productdetails{ min-width: 200px;  flex:1; font-size:1.8vw;  display:flex; flex-direction: column;      }
+div#ProductView div#productimages{   flex:2;  border:0px;   display:flex; align-items:flex-start; justify-content: center;   }
+
+
+div#ProductView div#productdetails div#details{     display:flex; flex-direction: column;     }
+div#ProductView div#productdetails div#details p{  font-weight:bold; font-family: Lucida Sans Unicode;      }
+div#ProductView div#productdetails div#details p#product_name{  flex-grow: 2;  }
+div#ProductView div#productdetails div#details p#product_price{ font-style:italic; margin-top: 2rem;  }
+div#ProductView div#productdetails div#details p#product_rating{ 
+    background-image: linear-gradient(green,rgb(6, 92, 6));
+    width:4em;
+    text-align: center;
+    font-weight:bold;
+    color:white;
+    font-size: 1rem;
+    border-radius:2px;
+    padding-left:0.5em;
+    padding-right:0.5em;  
+ }
+ div#ProductView div#productdetails div#details p#product_rating svg{
+    color:gold;
+    font-size: 0.9em;
+   
+}
+
+div#ProductView div#productdetails div#details p#product_discount{ text-decoration: line-through; color:rgb(214, 118, 118)   }
+
+
+
+
+
+div#ProductView div#productdetails div#btns{    flex:1;  display:flex; align-items: center; justify-content: space-around;}
+div#ProductView div#productdetails div#btns button{ font-size: 1vw; letter-spacing:0.1em; box-sizing: content-box;  width:40%;  padding-top:0.5em; padding-bottom:0.5em; border:0px; border-radius:3px; background-image:linear-gradient(rgba(189, 50, 32, 0.877),rgb(133, 7, 7)); color:white; font-family: Lucida Sans Unicode; font-weight: bold;    }
+div#ProductView div#productdetails div#btns button:active{  transform:perspective(100px) translateZ(-1px);       }
+
+
+
+
+
+
+@media only screen and (orientation:portrait){
+    div#ProductView{  flex-direction: column-reverse;        }
+    div#ProductView div#productdetails div#btns button{ font-size: 2vw;  width:45%;        }
+}

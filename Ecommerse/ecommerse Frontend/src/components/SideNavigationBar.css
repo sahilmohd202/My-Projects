@@ -1,0 +1,41 @@
+div#sidenavigationbar{ position:fixed; z-index:1; left:0%; top:0%; background-color: white; border:0; border-right:1px solid rgb(206, 204, 204); height:100vh;  width:30vw;  display:flex; flex-direction: column;   }
+
+
+
+
+div#sidenavigationbar div#user{  height:3em; font-size: 2vw;  display:flex; align-items: center; justify-content: space-between;  }
+div#sidenavigationbar div#setting{ border-top:2px solid rgb(145, 53, 53); flex:1; display:flex; }
+
+
+div#sidenavigationbar div#user img{ width:1.5em; height:1.5em; border-radius:50%; margin-left:1%; }
+div#sidenavigationbar div#user p{ flex:1; margin:0; text-align: center; }
+div#sidenavigationbar div#user div{   margin-right:1%;  }
+div#sidenavigationbar div#user svg{ color:rgb(145, 53, 53); padding-right: 0.5em;  }
+div#sidenavigationbar div#user svg:hover{ color:rgb(88, 11, 11);  }
+div#sidenavigationbar div#setting ul{ flex:1; margin:0; padding:0;   }
+div#sidenavigationbar div#setting ul li{ padding-left:5%; padding-right:5%; font-size:1.1vw; height:3em;  display:flex; flex-direction: row; align-items: center;  }
+div#sidenavigationbar div#setting ul li p{ flex:1; margin:0;   font-family: Lucida Sans Unicode; font-weight:bold; color:rgb(56, 54, 54); }
+div#sidenavigationbar div#setting ul li p a{ text-decoration: none; color:rgb(73, 72, 72);}
+div#sidenavigationbar div#setting ul li span#hasorders{
+    font-family: Lucida Sans Unicode;
+    font-weight: bold;
+    color:rgb(235, 113, 14);
+    font-size: 15px;
+
+}
+div#sidenavigationbar div#setting ul li:hover{
+    background-color:rgb(236, 213, 213);
+    color:rgb(88, 25, 25);
+}
+
+div#sidenavigationbar div#user p {  font-family: Calibri; color:rgb(73, 72, 72);  }
+
+
+
+
+
+@media only screen and (orientation:portrait){
+    div#sidenavigationbar{   width:98vw;  }
+    div#sidenavigationbar div#setting ul li{  font-size:2vh;    }
+    div#sidenavigationbar div#user{  height:3em; font-size: 5vh;  }
+}

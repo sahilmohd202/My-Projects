@@ -1,0 +1,132 @@
+div#loginpage{ padding-top: 2%;  background-color:white; width:100%; height:97vh; display:flex; align-items:stretch; justify-content: right;}
+div#loginpage form{background-color: white; padding:4%; border-left:2px solid rgb(173, 173, 173); width:30%; display:flex; flex-direction: column; justify-content:flex-start; row-gap: 25px; }
+div#loginpage form fieldset{ padding:0; padding-left: 1%; border:1px solid darkgray;  border-radius:5px;  background-color: white;       }
+div#loginpage form fieldset legend{ margin:0; margin-left: 10px; font-size: 1.1vw; font-weight:bold; font-family: Lucida Sans Unicode; color:rgb(68, 68, 68);    }
+div#loginpage form p#label{
+    color:rgba(189, 50, 32, 0.877);
+    font-family: Lucida Sans Unicode;
+    font-weight: bold;
+    margin:0;
+    font-size:2.2vw;
+}
+
+
+
+div#loginpage form fieldset input{
+    width:90%;
+    font-size: 1.2vw;
+    padding:0.4em;
+    border:0px;
+    outline:none;
+    font-family:Lucida Sans Unicode;
+    font-weight:bold;
+    color:rgba(58, 56, 56, 0.877);
+}
+div#loginpage form fieldset svg{
+    color:rgba(133, 38, 26, 0.877);
+    font-size:1vw;
+}
+div#loginpage form fieldset input::placeholder{
+    color:darkgray;
+    font-family:Lucida Sans Unicode;
+    font-weight:normal;
+
+}
+div#loginpage form div#btns input{
+    width:50%;
+    font-size: 1.1vw; font-family: Lucida Sans Unicode;
+    outline:none;
+    font-size: 1vw; letter-spacing:0.1em; box-sizing: content-box;  width:40%;  padding-top:0.5em; padding-bottom:0.5em; border:0px; border-radius:3px; background-image:linear-gradient(rgba(189, 50, 32, 0.877),rgb(133, 7, 7)); color:white; font-family: Lucida Sans Unicode; font-weight: bold; 
+}
+
+div#loginpage form div#btns input:active{  transform:perspective(100px) translateZ(-1px);       }
+div#loginpage form div#btns{
+    display:flex;
+    justify-content: space-around;
+}
+
+div#loginpage form div#errorbox{
+    margin-top: 10%;
+    background-color:rgb(231, 176, 176);
+    color:rgba(177, 36, 17, 0.877);
+    padding:1em;
+    font-size: 1vw;
+    font-family: Lucida Sans Unicode;
+}
+div#loginpage form div#errorbox svg,div#loginpage form div#warningbox svg{
+    margin-right:1em;
+}
+
+div#loginpage form div#warningbox{
+    margin-top: 10%;
+    background-color:rgb(183, 253, 246);
+    color:rgba(18, 145, 161, 0.877);
+    padding:1em;
+    font-size: 1vw;
+    font-family: Lucida Sans Unicode;
+}
+
+
+
+
+div#loading,div#nonetwork{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:rgba(39, 9, 5, 0.877);
+    font-size: 1vw;
+    font-family: Lucida Sans Unicode;
+    display: none;
+}
+
+@keyframes loadingRotating{ from{ transform:rotate(0deg);  }to{ transform:rotate(360deg); }  }
+div#loading svg{
+    color:rgba(177, 36, 17, 0.877);
+    font-size: 2vw;
+    animation-name:loadingRotating;
+    animation-duration:2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (orientation:portrait)
+{
+    div#loginpage{ justify-content: center;}
+    div#loginpage form{  width:90%; }
+    div#loginpage form fieldset input{ font-size: 2vh; }
+    div#loginpage form fieldset legend{ font-size: 1.8vh; }
+    div#loginpage form div#btns input{
+        font-size: 1.2vh; 
+       width:40%; 
+     }
+     div#loginpage form p#label{
+        font-size:2.6vh;
+    }
+    div#loginpage form fieldset svg{
+        font-size:2vh;
+    }
+    div#loginpage form div#errorbox,div#loginpage form div#warningbox{
+       font-size:2vh;
+    }
+    div#loading svg{ 
+        font-size: 3vh;
+    }
+    div#loading,div#nonetwork{
+        font-size: 1vh;
+    }
+    
+
+}

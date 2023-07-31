@@ -1,0 +1,35 @@
+div#footer{
+    background-color: rgb(145, 53, 53);
+    color:white;
+    font-family: Calibri;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:0.5em;
+    width:100%;
+     
+}
+
+div#footer div.section{
+    display:flex;
+    flex-direction: column;
+    
+}
+div#footer div.section p{ margin:0; font-size:1.2em;}
+div#footer div.section a{ color:white; text-decoration: none; padding-top: 1.1em;  }
+div#footer div.section a:hover{ text-decoration: underline; }
+div#footer div.section a:hover svg{ transition-duration: 1.5s;   transform: rotateY(360deg);    }
+div#footer div.section a svg{  margin-right:1em;  }
+
+
+@media only screen and (orientation:portrait)
+{
+    div#footer {
+        flex-direction: column;
+    }
+    div#footer div.section{
+     font-size: 1.35em;
+     margin-top: 2em;
+        
+    }
+}

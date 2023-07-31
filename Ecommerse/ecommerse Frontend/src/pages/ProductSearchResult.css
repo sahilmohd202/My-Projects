@@ -1,0 +1,21 @@
+div#productsearchresult{
+   padding-top: 5%;
+   background-color:white;
+ 
+}
+
+@keyframes loadingRotating{ from{ transform:rotate(0deg);  }to{ transform:rotate(360deg); }  }
+div#productsearchresult div#psrloading{  background-color: white; padding-top:100px; padding-bottom: 100px;  display:flex; justify-content: center; align-items: center;}
+div#productsearchresult div#psrloading svg{
+    color:rgba(177, 36, 17, 0.877);
+    font-size: 2vw;
+    animation-name:loadingRotating;
+    animation-duration:2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    
+}
+
+
+
+

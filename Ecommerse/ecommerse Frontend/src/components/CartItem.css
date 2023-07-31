@@ -1,0 +1,51 @@
+
+div#CartItem{
+   border:1px solid lightgray;
+   background-color: white;
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   width:96%;
+   font-family: Lucida Sans Unicode; font-size:13px; font-weight: bold;
+   font-size: 0.8vw;
+   margin-bottom:1em;
+   padding:0.5em;
+   
+  
+}
+
+div#CartItem img{ width:10%; height:10%;    }
+div#CartItem p#name{ margin:0; width:50%;    }
+div#CartItem p#price{ font-weight: normal;  align-self: flex-end; }
+div#CartItem div#quantity{ align-self: flex-end; }
+div#CartItem div#quantity button{ font-size: 1vw; border-radius:5px; border:1px solid rgb(148, 148, 148); color:rgb(85, 85, 85);  }
+div#CartItem div#quantity button:hover{ background-color: rgb(212, 212, 212); }
+div#CartItem div#quantity span{ padding:0.5em;}
+div#CartItem button#delete{ 
+   border:0;
+   align-self: flex-start;
+ }
+
+div#CartItem button#delete:hover{
+    transform: scale(1.1);
+    transition-duration:0.1s;
+} 
+ div#CartItem button#delete svg{
+    color: rgb(99, 28, 28);
+ }
+
+
+ @media only screen and (orientation:portrait){
+   div#CartItem{
+      align-items: flex-start;
+      font-size: 1vh;
+      width:95%;
+   }
+   
+   div#CartItem button#delete{ 
+       font-size: 1.2vh;
+   }
+  
+
+
+ }

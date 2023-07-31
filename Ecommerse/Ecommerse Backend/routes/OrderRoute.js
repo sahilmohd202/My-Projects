@@ -1,0 +1,6 @@
+const express=require('express');
+const OrderRoutes=express.Router();
+const OrderCtrl=require('../controllers/OrderCtrl.js');
+OrderRoutes.post('/',express.json(),OrderCtrl.placeOrder);   // place order     /orders/...  
+OrderRoutes.get('/',OrderCtrl.getAllPlaceOrders);  // retrieve all orders placed information ...
+module.exports=OrderRoutes;
